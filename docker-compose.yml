@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   internetbanking:
-    image: trainerreyaz/ib-image:latest
+    image: dockerk8hima/ib_name:latest
     ports:
       - "81:80"
     deploy:
@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/lib/internetbanking
   mobilebanking:
-    image: trainerreyaz/mb-image:latest
+    image: dockerk8hima/mb_name:latest
     ports:
       - "82:80"
     deploy:
@@ -17,7 +17,7 @@ services:
     volumes:
       - /var/lib/mobilebanking
   insurance:
-    image: trainerreyaz/insurance-image:latest
+    image: dockerk8hima/insurance_name:latest
     ports:
       - "83:80"
     deploy:
@@ -25,10 +25,10 @@ services:
     volumes:
       - /var/lib/insurance
   loan:
-    image: trainerreyaz/loans-image:latest
+    image: dockerk8hima/loans_name:latest
     ports:
       - "84:80"
     deploy:
       replicas: 3
     volumes:
-      - /var/lib/loan
+      - /var/lib/loans
